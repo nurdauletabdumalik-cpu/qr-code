@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | QR code component</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 0.6875rem;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <script>
+      document.body.style.margin = "0";
+      document.body.style.backgroundColor = "#d5e1ef";
+      document.body.style.display = "flex";
+      document.body.style.justifyContent = "center";
+      document.body.style.alignItems = "center";
+      document.body.style.height = "100vh";
+      document.body.style.fontFamily = "Arial";
+
+      const card = document.createElement("div");
+      card.style.background = "white";
+      card.style.padding = "20px";
+      card.style.borderRadius = "15px";
+      card.style.textAlign = "center";
+      card.style.width = "250px";
+      card.style.boxShadow = "0 10px 20px rgba(0,0,0,0.1)";
+      document.body.appendChild(card);
+
+      const img = document.createElement("img");
+      img.src = "image-qr-code.png";
+      img.style.width = "100%";
+      img.style.borderRadius = "10px";
+
+      card.appendChild(img);
+
+      const title = document.createElement("h3");
+      title.textContent = "Improve your front-end skills by building projects";
+      title.style.fontSize = "15px";
+      title.style.margin = "15px 0";
+      card.appendChild(title);
+
+      const text = document.createElement("p");
+      text.innerText =
+        "Scan the QR code to visit Frontend Mentor and take your coding skills to the next level";
+      text.style.fontSize = "12px";
+      text.style.color = "gray";
+      card.appendChild(text);
+    </script>
+  </body>
+</html>
